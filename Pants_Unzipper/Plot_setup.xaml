@@ -1,0 +1,28 @@
+﻿<Window x:Class="Pants_Unzipper.Plot_setup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pants_Unzipper"
+        mc:Ignorable="d"
+        Title="Plot Setup" Height="222"
+         Width="526.948">
+    <Grid>
+        <Label x:Name="Y_label_2" Content="Y - axis" Visibility="Hidden" Height="26" Margin="10,103,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Left" Width="296"/>
+        <ComboBox x:Name="SensorList_y_2" Visibility ="Hidden" HorizontalAlignment="Left" Height="35" Margin="10,134,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label x:Name="Y_label_3" Content="Y - axis" Visibility="Hidden" Height="26" Margin="10,170,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Left" Width="296"/>
+        <ComboBox x:Name="SensorList_y_3" Visibility ="Hidden" HorizontalAlignment="Left" Height="35" Margin="10,201,0,0" VerticalAlignment="Top" Width="295"/>
+        <Button x:Name ="Plot_selected" Content="Apply" HorizontalAlignment="Left" Height="47" Margin="390,65,0,0" VerticalAlignment="Top" Width="121" Click="Plot_selected_Click"/>
+        <Label x:Name ="X_label" Content="X - axis" Height="26" Margin="10,103,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Left" Width="295"/>
+        <Label x:Name="Y_label" Content="Y - axis" Height="26" Margin="10,32,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Left" Width="296"/>
+        <ComboBox x:Name="SensorList_y" HorizontalAlignment="Left" Height="35" Margin="10,63,0,0" VerticalAlignment="Top" Width="295"/>
+        <ComboBox x:Name="SensorList_x"  HorizontalAlignment="Left" Height="35" Margin="10,134,0,0" VerticalAlignment="Top" Width="295"/>
+        <Button x:Name="Add_y_button" Content="Add Another Y-Axis" HorizontalAlignment="Left" Height="52" Margin="390,117,0,0" VerticalAlignment="Top" Width="121" Click="Add_y_button_Click"/>
+        <Button Name="X_1" Content="X" Visibility ="Hidden" HorizontalAlignment="Left" Height="35" Margin="346,134,0,0" VerticalAlignment="Top" Width="19" Click="X_1_Click"/>
+        <Button Name ="X_2" Content="X" Visibility ="Hidden" HorizontalAlignment="Left" Height="35" Margin="346,201,0,-43.2" VerticalAlignment="Top" Width="19" Click="X_2_Click"/>
+        <Button x:Name="Edit_2" Content="Edit" Visibility ="Hidden" HorizontalAlignment="Left" Height="35" Margin="311,134,0,0" VerticalAlignment="Top" Width="30" Click="Edit_2_Click"/>
+        <Button x:Name="Edit_1" Content="Edit" HorizontalAlignment="Left" Height="35" Margin="311,63,0,0" VerticalAlignment="Top" Width="30" Click="Edit_1_Click"/>
+        <Button x:Name ="Edit_3" Content="Edit" Visibility ="Hidden" HorizontalAlignment="Left" Height="35" Margin="311,201,0,-43.2" VerticalAlignment="Top" Width="30" Click="Edit_3_Click"/>
+        <Button x:Name="Edit_4" Content="Edit" Visibility="Hidden" HorizontalAlignment="Left" Height="35" Margin="311,268,0,-110.2" VerticalAlignment="Top" Width="30" Click="Edit_4_Click"/>
+    </Grid>
+</Window>

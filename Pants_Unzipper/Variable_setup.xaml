@@ -1,0 +1,24 @@
+﻿<Window x:Class="Pants_Unzipper.Variable_setup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pants_Unzipper"
+        mc:Ignorable="d"
+        Title="Variable Setup" Height="269.845" Width="436.013">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="167" Stroke="Black" VerticalAlignment="Top" Width="280"/>
+        <ComboBox Name="HexHandler" HorizontalAlignment="Left" Height="29" Margin="10,201,0,0" VerticalAlignment="Top" Width="259" SelectedIndex="2"/>
+        <Button Name="Apply_Button" Content="Apply" HorizontalAlignment="Left" Height="29" Margin="299,10,0,0" VerticalAlignment="Top" Width="115" Click="Apply_Button_Click"/>
+        <TextBox Name="Custom_Name" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" TextWrapping="Wrap" Text="Custom Display Name" VerticalAlignment="Top" Width="259" TextChanged="Custom_Name_TextChanged" />
+        <Label Content="Hex Stream Handler" HorizontalAlignment="Left" Height="24" Margin="10,172,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label Content="Line Color" HorizontalAlignment="Left" Height="30" Margin="10,37,0,0" VerticalAlignment="Top" Width="116"/>
+        <ComboBox Name ="Color_List" HorizontalAlignment="Left" Height="29" Margin="10,59,0,0" VerticalAlignment="Top" Width="259" SelectedIndex="0"/>
+        <Button Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Height="29" Margin="299,44,0,0" VerticalAlignment="Top" Width="115" Click="CancelButton_Click"/>
+        <Image Name="Ess" Visibility="Hidden" Margin="293,78,15.6,9.8" Source="ess.png" Stretch="Fill" IsEnabled="False" Cursor="Help" ToolTip=""/>
+        <CheckBox x:Name="datapointHighlight" Content="Highlight Individual Datapoints" HorizontalAlignment="Left" Height="21" Margin="10,146,0,0" VerticalAlignment="Top" Width="193" IsChecked="True" Click="DatapointHighlight_Click"/>
+        <ComboBox x:Name="LineStyle_select" HorizontalAlignment="Left" Height="29" Margin="10,112,0,0" VerticalAlignment="Top" Width="259" SelectedIndex="0"/>
+        <Label Content="Line Style" HorizontalAlignment="Left" Height="30" Margin="10,93,0,0" VerticalAlignment="Top" Width="116"/>
+
+    </Grid>
+</Window>
